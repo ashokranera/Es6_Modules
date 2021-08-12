@@ -12,6 +12,62 @@
 // --------------------------------------------------------------------------------------------
 
 
-import {cube} from './module.mjs'
+// import {square, cube} from './module.mjs'
 
-console.log(cube(5))
+// console.log(square(2))
+// console.log(cube(5))
+
+
+// --------------------------------------------------------------------------------------------
+                            //  3 way import
+// --------------------------------------------------------------------------------------------
+// change the name of import
+
+// import {cube as cubeThisNumber} from './module.mjs'
+
+// // console.log(square(2))
+// console.log(cubeThisNumber(5))
+
+// --------------------------------------------------------------------------------------------
+                            //  4 way import
+// --------------------------------------------------------------------------------------------
+
+
+// import { cube} from './module.mjs'
+
+// // console.log(square(2))
+// console.log(cube(5))
+
+
+// --------------------------------------------------------------------------------------------
+                            //  5 way import
+// --------------------------------------------------------------------------------------------
+
+// //if you number of import modules 
+
+// // import * as <any name> from './module>'
+
+// import * as util from './module.mjs'
+
+// // console.log(util)
+// console.log(util.cube(5))
+
+
+// --------------------------------------------------------------------------------------------
+                            //  6 way import  include m2
+// --------------------------------------------------------------------------------------------
+
+//posible case 1
+
+// import { square , power } from "./module.mjs";
+
+// console.log(square , power)
+
+
+//posible case 2
+// --------------------------------------------------------------------------------------------
+
+import { square , m2 } from "./module.mjs";
+
+// console.log(square , m2)
+console.log(m2)
